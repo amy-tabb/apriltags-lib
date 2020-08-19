@@ -23,9 +23,9 @@ cmake_minimum_required(VERSION 3.5)
 # Infact, some legacy Find<package>.cmake files that require the C language to
 # be enabled and thus using only CXX may cause issues. Note that by default when
 # LANGUAGES is not specified CMake enables both CXX and C.
-project(LibTemplateCMake
+project(apriltags
         LANGUAGES CXX C
-        VERSION 0.0.0.0)
+        VERSION 1.0.0.0)
 
 # Defines the CMAKE_INSTALL_LIBDIR, CMAKE_INSTALL_BINDIR and many other useful macros.
 # See https://cmake.org/cmake/help/latest/module/GNUInstallDirs.html
@@ -145,6 +145,8 @@ install_basic_package_files(${PROJECT_NAME}
                             NO_CHECK_REQUIRED_COMPONENTS_MACRO)
 # Add the uninstall target
 include(AddUninstallTarget)
+
+
 
 # Add integration tests (unit tests for each library should be in each sublibrary directory).
 if(BUILD_TESTING)
