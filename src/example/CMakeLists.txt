@@ -2,6 +2,9 @@ set(EXE_TARGET_NAME example)
 
 include_directories(include  ${Eigen_INCLUDE_DIRS})
 
+## TODO
+#target_include_directories(${LIBRARY_TARGET_NAME} PUBLIC ${Eigen_INCLUDE_DIRS})
+
 set(${EXE_TARGET_NAME}_SRC
        apriltags_demo2.cpp
        Serial.cpp
