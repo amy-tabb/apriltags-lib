@@ -15,7 +15,24 @@ There are other AprilTag(s) libraries. One for ROS is [AprilRobotics/apriltag_ro
 
 # How to build and test
 
+```
+cd how-to-export-cpp-library
+mkdir build && cd build
+cmake ..
+cmake --build .
+```
 
+To test, 
 
+```
+cd bin
+./example 
+../../test-image.jpg 
+```
 
+Then, to install the library, 
+
+```
+sudo make install
+```
 
