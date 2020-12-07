@@ -26,8 +26,7 @@ To test,
 
 ```
 cd bin
-./example 
-../../test-image.jpg 
+./example ../../test-image.jpg 
 ```
 
 Then, to install the library, 
